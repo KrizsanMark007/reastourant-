@@ -3,41 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Website</title>
+    <title>Reastourant</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Restaurant</h1>
-        <nav>
-            <ul>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topbar">
+            <span>Open daily 11:30 AM – 11:00 PM</span>
+            <a href="#contact" class="btn btn-sm">Book a Table</a>
+        </div>
+        <div class="header-inner">
+            <div class="brand">
+                <h1>Reastourant</h1>
+                <p>Modern comfort food with a loud vibe and tasty chaos.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <div class="hero-copy">
+                <span class="eyebrow">Chef's Special</span>
+                <h2>Bold plates, bright spaces, and playful nights.</h2>
+                <p>Try our signature menu with flame-grilled flavors, creamy desserts, and cocktails made to share.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary">See Menu</a>
+                    <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80" alt="Restaurant food">
+            </div>
+        </div>
     </header>
-    
-    <section id="menu">
-        <h2>Our Menu</h2>
-        <p>Explore our delicious offerings!</p>
-        <!-- Menu items will be listed here -->
-    </section>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Learn more about our story and values.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us for reservations or inquiries.</p>
-    </section>
-    
+
+    <main>
+        <section id="menu" class="section menu-section">
+            <div class="section-header">
+                <span class="section-tag">Menu</span>
+                <h2>Price list and favorites</h2>
+                <p>From crispy starters to indulgent desserts, every dish is designed to make your table buzz.</p>
+            </div>
+            <div id="menu-items" class="menu-grid"></div>
+        </section>
+
+        <section class="section feature-strip">
+            <div class="feature-card">
+                <h3>Fresh ingredients</h3>
+                <p>Daily market favorites, house sauces, and locally baked breads.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Signature dishes</h3>
+                <p>Bold burgers, loaded fries, spicy wings, and creamy bowls.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Late-night energy</h3>
+                <p>Comfort food with neon lighting, loud playlists, and relaxed crowds.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="section-header">
+                <span class="section-tag">Gallery</span>
+                <h2>Sample plates and vibe shots</h2>
+                <p>Get hungry before you arrive with our curated food and interior images.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&q=80" alt="Grilled dish"><p>Grilled seasonal catch</p></div>
+                <div class="gallery-card"><img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Gourmet burger"><p>Loaded burger and fries</p></div>
+                <div class="gallery-card"><img src="https://images.unsplash.com/photo-1543332164-5f95d5d0e2f6?auto=format&fit=crop&w=800&q=80" alt="Cocktail"><p>Signature cocktail lineup</p></div>
+                <div class="gallery-card"><img src="https://images.unsplash.com/photo-1498575207490-2f7dfb7c10fd?auto=format&fit=crop&w=800&q=80" alt="Dessert"><p>Chocolate lava dessert</p></div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-header">
+                <span class="section-tag">About Us</span>
+                <h2>Our story is loud, tasty, and a little chaotic.</h2>
+            </div>
+            <div class="about-content">
+                <div>
+                    <p>Reastourant began as a late-night idea: turn bold comfort food into a vibrant dining playground. We serve vibrant plates, house-made sauces, and shareable cravings.</p>
+                    <ul>
+                        <li>Big plates for friends</li>
+                        <li>Fresh ingredients every day</li>
+                        <li>Colorful presentation and atmosphere</li>
+                    </ul>
+                </div>
+                <aside class="quote-card">
+                    <p>"The best place for relaxed nights with friends, loud music, and dishes that keep coming."</p>
+                    <span>- Local food fan</span>
+                </aside>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-header">
+                <span class="section-tag">Contact</span>
+                <h2>Reserve a table or send a quick message</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Visit us</h3>
+                    <p>123 Flavor Street<br>Budapest, HU</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Call</h3>
+                    <p>+36 1 234 5678</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>hello@reastourant.hu</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2023 Our Restaurant. All rights reserved.</p>
+        <p>&copy; 2026 Reastourant. Made with spice and style.</p>
     </footer>
-    
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>
