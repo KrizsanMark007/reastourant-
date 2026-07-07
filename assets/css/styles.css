@@ -232,8 +232,90 @@ main {
 
 .menu-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
+}
+
+.menu-category {
+    border-radius: 2rem;
+    background: #fff;
+    border: 1px solid rgba(31, 41, 55, 0.08);
+    box-shadow: 0 18px 40px rgba(15, 20, 35, 0.05);
+    overflow: hidden;
+}
+
+.menu-category h3 {
+    margin: 0;
+    padding: 1.75rem;
+    background: linear-gradient(135deg, rgba(255, 111, 97, 0.08), rgba(255, 158, 57, 0.1));
+    font-size: 1.4rem;
+    color: #111827;
+}
+
+.menu-category-list {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.menu-item {
+    padding: 1.35rem 1.4rem;
+    border-radius: 1.5rem;
+    background: #f8f6f3;
+    display: grid;
+    gap: 0.65rem;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.menu-item-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.menu-item-price {
+    font-weight: 800;
+    color: #111827;
+}
+
+.menu-item-description {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.6;
+}
+
+.menu-item-allergens {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: #5b636f;
+    font-size: 0.88rem;
+}
+
+.allergen-tag {
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(31, 41, 55, 0.08);
+    color: #111827;
+}
+
+.allergen-note {
+    margin-top: 1.75rem;
+    padding: 1.5rem;
+    border-radius: 1.75rem;
+    background: #fff5f0;
+    border: 1px solid rgba(255, 111, 97, 0.15);
+}
+
+.allergen-note h3 {
+    margin: 0 0 0.75rem;
 }
 
 .menu-card {
