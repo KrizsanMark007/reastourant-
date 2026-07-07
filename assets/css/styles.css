@@ -1,12 +1,12 @@
 :root {
-    --bg: #f8f6f0;
-    --surface: rgba(255, 255, 255, 0.96);
-    --text: #2f3c2a;
-    --muted: #6a6a41;
-    --accent: #b68f3d;
-    --accent-soft: #f6ead4;
+    --bg: #3f5128;
+    --surface: rgba(255, 255, 255, 0.98);
+    --text: #d4b15b;
+    --muted: #c9b675;
+    --accent: #d4b15b;
+    --accent-soft: rgba(212, 177, 91, 0.2);
     --surface-strong: #ffffff;
-    --shadow: 0 24px 70px rgba(47, 60, 42, 0.14);
+    --shadow: 0 24px 70px rgba(47, 60, 42, 0.16);
 }
 
 * {
@@ -20,8 +20,8 @@ html {
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top left, rgba(182, 143, 61, 0.14), transparent 24%),
-                radial-gradient(circle at bottom right, rgba(117, 131, 59, 0.14), transparent 28%),
+    background: radial-gradient(circle at top left, rgba(212, 177, 91, 0.12), transparent 22%),
+                radial-gradient(circle at bottom right, rgba(117, 131, 59, 0.22), transparent 30%),
                 var(--bg);
     color: var(--text);
 }
@@ -55,14 +55,16 @@ button:hover {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #b68f3d, #e4c97e);
-    color: #ffffff;
-    box-shadow: 0 18px 40px rgba(118, 101, 52, 0.22);
+    background: #ffffff;
+    color: var(--text);
+    box-shadow: 0 18px 40px rgba(47, 60, 42, 0.14);
+    border: 1px solid rgba(212, 177, 91, 0.4);
 }
 
 .btn-secondary {
-    background: #4f5d33;
-    color: #ffffff;
+    background: #ffffff;
+    color: var(--text);
+    border: 1px solid rgba(117, 131, 59, 0.3);
 }
 
 .btn-sm {
@@ -118,14 +120,14 @@ nav ul {
 }
 
 nav a {
-    color: #1f2937;
+    color: var(--surface-strong);
     text-decoration: none;
     font-weight: 700;
     padding: 0.55rem 0.85rem;
 }
 
 nav a:hover {
-    background: rgba(182, 143, 61, 0.16);
+    background: rgba(255, 255, 255, 0.18);
     border-radius: 999px;
 }
 
