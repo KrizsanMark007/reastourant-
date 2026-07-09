@@ -2,7 +2,7 @@ const menuSections = [
     {
         title: 'Pizza',
         items: [
-            { name: 'Margherita', description: 'Tomato sauce, mozzarella, basil.', price: '2 190 Ft', allergens: ['gluten', 'dairy'] },
+            { name: 'Margherita', description: 'paradicsom alap, mozzarella', price: '1 700 Ft', allergens: ['gluten', 'dairy'] },
             { name: 'Pepperoni', description: 'Spicy pepperoni, mozzarella, tomato sauce.', price: '2 690 Ft', allergens: ['gluten', 'dairy'] },
             { name: 'Truffle Mushroom', description: 'Mixed mushrooms, truffle oil, mascarpone.', price: '3 290 Ft', allergens: ['gluten', 'dairy'] }
         ]
