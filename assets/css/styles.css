@@ -1,12 +1,12 @@
 :root {
-    --bg: #3f5128;
+    --bg: #2f4518; /* darker green */
     --surface: rgba(255, 255, 255, 0.98);
-    --text: #d4b15b;
-    --muted: #c9b675;
-    --accent: #d4b15b;
-    --accent-soft: rgba(212, 177, 91, 0.2);
+    --text: #b8860b; /* richer gold */
+    --muted: #bfa153; /* darker muted gold */
+    --accent: #b8860b;
+    --accent-soft: rgba(184, 134, 11, 0.18);
     --surface-strong: #ffffff;
-    --shadow: 0 24px 70px rgba(47, 60, 42, 0.16);
+    --shadow: 0 24px 70px rgba(30, 45, 20, 0.16);
 }
 
 * {
@@ -20,8 +20,8 @@ html {
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: radial-gradient(circle at top left, rgba(212, 177, 91, 0.12), transparent 22%),
-                radial-gradient(circle at bottom right, rgba(117, 131, 59, 0.22), transparent 30%),
+    background: radial-gradient(circle at top left, rgba(184, 134, 11, 0.12), transparent 22%),
+                radial-gradient(circle at bottom right, rgba(47, 69, 24, 0.22), transparent 30%),
                 var(--bg);
     color: var(--text);
 }
@@ -57,14 +57,14 @@ button:hover {
 .btn-primary {
     background: #ffffff;
     color: var(--text);
-    box-shadow: 0 18px 40px rgba(47, 60, 42, 0.14);
-    border: 1px solid rgba(212, 177, 91, 0.4);
+    box-shadow: 0 18px 40px rgba(30, 45, 20, 0.14);
+    border: 1px solid rgba(184, 134, 11, 0.45);
 }
 
 .btn-secondary {
     background: #ffffff;
     color: var(--text);
-    border: 1px solid rgba(117, 131, 59, 0.3);
+    border: 1px solid rgba(47, 69, 24, 0.32);
 }
 
 .btn-sm {
@@ -152,8 +152,8 @@ nav a:hover {
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 999px;
-    background: rgba(182, 143, 61, 0.16);
-    color: #6f5328;
+    background: var(--accent-soft);
+    color: #5a4216;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -242,17 +242,17 @@ main {
 .menu-category {
     border-radius: 2rem;
     background: #ffffff;
-    border: 1px solid rgba(117, 131, 59, 0.16);
-    box-shadow: 0 18px 40px rgba(47, 60, 42, 0.08);
+    border: 1px solid rgba(47, 69, 24, 0.16);
+    box-shadow: 0 18px 40px rgba(30, 45, 20, 0.08);
     overflow: hidden;
 }
 
 .menu-category h3 {
     margin: 0;
     padding: 1.75rem;
-    background: linear-gradient(135deg, rgba(117, 131, 59, 0.15), rgba(182, 143, 61, 0.15));
+    background: linear-gradient(135deg, rgba(47, 69, 24, 0.15), rgba(184, 134, 11, 0.15));
     font-size: 1.4rem;
-    color: #2f3c2a;
+    color: #213017;
 }
 
 .menu-category-list {
@@ -314,7 +314,7 @@ main {
     padding: 1.5rem;
     border-radius: 1.75rem;
     background: #fcf7e8;
-    border: 1px solid rgba(182, 143, 61, 0.18);
+    border: 1px solid rgba(184, 134, 11, 0.18);
 }
 
 .allergen-note h3 {
