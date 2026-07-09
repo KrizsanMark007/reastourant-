@@ -1,5 +1,5 @@
 const defaultLanguage = 'hu';
-const supportedLanguages = ['hu', 'en', 'de'];
+const supportedLanguages = ['hu', 'en'];
 
 const translations = {
     hu: {
@@ -113,62 +113,6 @@ const translations = {
         contact_call: 'Call',
         contact_email: 'Email',
         footer_text: '© 2026 Reastourant. Made with spice and style.'
-    },
-    de: {
-        topbar_open: 'Täglich geöffnet von 11:30 bis 23:00 Uhr',
-        book_table: 'Tisch reservieren',
-        brand_subtitle: 'Modernes Comfort Food mit lautem Flair und leckeren Aromen.',
-        nav_menu: 'Speisekarte',
-        nav_gallery: 'Galerie',
-        nav_about: 'Über uns',
-        nav_contact: 'Kontakt',
-        hero_eyebrow: 'Chef-Empfehlung',
-        hero_title: 'Kräftige Gerichte, helle Räume und spielerische Nächte.',
-        hero_text: 'Probieren Sie unsere Signature-Gerichte mit Flammen-grillten Aromen, cremigen Desserts und Cocktails zum Teilen.',
-        hero_menu_btn: 'Speisekarte ansehen',
-        hero_gallery_btn: 'Galerie ansehen',
-        section_menu_tag: 'Speisekarte',
-        section_menu_title: 'Preisübersicht und Favoriten',
-        section_menu_text: 'Von knusprigen Vorspeisen bis zu üppigen Desserts – jedes Gericht ist dafür gemacht, Ihren Tisch zu beleben.',
-        allergen_title: 'Allergene',
-        allergen_text: 'Alle Speisen können Spuren von Gluten, Milchprodukten, Nüssen, Soja, Eiern und Sesam enthalten. Bitte informieren Sie Ihren Service bei Allergien.',
-        section_gallery_tag: 'Galerie',
-        section_gallery_title: 'Mustergerichte und Stimmungsszenen',
-        section_gallery_text: 'Machen Sie sich hungrig, bevor Sie mit unseren kuratierten Essens- und Interior-Bildern ankommen.',
-        gallery_bolognese: 'Bolognese Pasta',
-        gallery_carbonara: 'Carbonara Pasta',
-        gallery_grill: 'Gegrillte Fleischgerichte',
-        gallery_steak: 'Rindersteak',
-        gallery_margherita: 'Margherita Pizza',
-        gallery_food_1: 'Tagliatelle alla Bolognese',
-        gallery_food_2: 'Spaghetti alla Carbonara',
-        gallery_food_3: 'Pollo al Limone',
-        gallery_food_4: 'Flank Steak al Pepe Verde',
-        gallery_food_5: 'Classic Tiramisu',
-        gallery_food_6: 'Costine Italiane',
-        gallery_food_7: 'Salmone Olandese',
-        gallery_drink_1: 'Coca-Cola / Coca-Cola Zero',
-        gallery_drink_2: 'Kinley Tonic / Ginger Ale',
-        gallery_drink_3: 'Classic Mint Splash',
-        gallery_drink_4: 'Mango Chili Madness',
-        gallery_drink_5: 'Espresso',
-        gallery_drink_6: 'Dreher Gold 0.3 l',
-        gallery_drink_7: 'Terredirai Prosecco DOC Brut',
-        section_about_tag: 'Über uns',
-        section_about_title: 'Unsere Geschichte ist laut, lecker und ein bisschen chaotisch.',
-        about_paragraph: 'Reastourant begann als Spätabendidee: Verwandle mutiges Comfort Food in ein lebendiges Dining-Erlebnis. Wir servieren lebendige Gerichte, hausgemachte Saucen und zum Teilen geeignete Genüsse.',
-        about_feature_1: 'Große Portionen für Freunde',
-        about_feature_2: 'Frische Zutaten jeden Tag',
-        about_feature_3: 'Bunte Präsentation und Atmosphäre',
-        about_quote: '„Der beste Ort für entspannte Abende mit Freunden, lauter Musik und fortlaufenden Gerichten.“',
-        about_quote_author: '- Lokaler Gast',
-        section_contact_tag: 'Kontakt',
-        section_contact_title: 'Reservieren Sie einen Tisch oder senden Sie eine kurze Nachricht',
-        contact_visit: 'Besuchen Sie uns',
-        contact_address: '123 Flavor Street<br>Budapest, HU',
-        contact_call: 'Anrufen',
-        contact_email: 'E-Mail',
-        footer_text: '© 2026 Reastourant. Mit Würze und Stil gemacht.'
     }
 };
 
