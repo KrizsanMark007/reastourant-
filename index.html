@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +9,55 @@
 <body>
     <header>
         <div class="topbar">
-            <span>Open daily 11:30 AM – 11:00 PM</span>
-            <a href="#contact" class="btn btn-sm">Book a Table</a>
+            <span data-i18n="topbar_open">Open daily 11:30 AM – 11:00 PM</span>
+            <div class="lang-switcher">
+                <button type="button" class="lang-btn active" data-lang="hu">HU</button>
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="de">DE</button>
+            </div>
+            <a href="#contact" class="btn btn-sm" data-i18n="book_table">Book a Table</a>
         </div>
         <div class="header-inner">
             <div class="brand">
                 <h1>Reastourant</h1>
-                <p>Modern comfort food with a loud vibe and tasty chaos.</p>
+                <p data-i18n="brand_subtitle">Modern comfort food with a loud vibe and tasty chaos.</p>
             </div>
             <nav>
                 <ul>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#menu" data-i18n="nav_menu">Menu</a></li>
+                    <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+                    <li><a href="#about" data-i18n="nav_about">About</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
         <div class="hero">
             <div class="hero-copy">
-                <span class="eyebrow">Chef's Special</span>
-                <h2>Bold plates, bright spaces, and playful nights.</h2>
-                <p>Try our signature menu with flame-grilled flavors, creamy desserts, and cocktails made to share.</p>
+                <span class="eyebrow" data-i18n="hero_eyebrow">Chef's Special</span>
+                <h2 data-i18n="hero_title">Bold plates, bright spaces, and playful nights.</h2>
+                <p data-i18n="hero_text">Try our signature menu with flame-grilled flavors, creamy desserts, and cocktails made to share.</p>
                 <div class="hero-actions">
-                    <a href="#menu" class="btn btn-primary">See Menu</a>
-                    <a href="#gallery" class="btn btn-secondary">View Gallery</a>
+                    <a href="#menu" class="btn btn-primary" data-i18n="hero_menu_btn">See Menu</a>
+                    <a href="#gallery" class="btn btn-secondary" data-i18n="hero_gallery_btn">View Gallery</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="assets/images/hero.jpg" alt="Restaurant food">
+            <div class="hero-image hero-collage">
+                <div class="hero-collage-grid">
+                    <div class="hero-collage-item"><img src="assets/images/food-1.svg" alt="Tagliatelle alla Bolognese"></div>
+                    <div class="hero-collage-item"><img src="assets/images/food-2.svg" alt="Spaghetti alla Carbonara"></div>
+                    <div class="hero-collage-item"><img src="assets/images/food-3.svg" alt="Pollo al Limone"></div>
+                    <div class="hero-collage-item"><img src="assets/images/food-4.svg" alt="Flank Steak al Pepe Verde"></div>
+                    <div class="hero-collage-item"><img src="assets/images/food-5.svg" alt="Classic Tiramisu"></div>
+                    <div class="hero-collage-item"><img src="assets/images/food-6.svg" alt="Costine Italiane"></div>
+                    <div class="hero-collage-item"><img src="assets/images/food-7.svg" alt="Salmone Olandese"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-1.svg" alt="Coca-Cola / Coca-Cola Zero"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-2.svg" alt="Kinley Tonic / Ginger Ale"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-3.svg" alt="Classic Mint Splash"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-4.svg" alt="Mango Chili Madness"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-5.svg" alt="Espresso"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-6.svg" alt="Dreher Gold"></div>
+                    <div class="hero-collage-item"><img src="assets/images/drink-7.svg" alt="Terredirai Prosecco DOC Brut"></div>
+                </div>
             </div>
         </div>
     </header>
@@ -45,14 +65,14 @@
     <main>
         <section id="menu" class="section menu-section">
             <div class="section-header">
-                <span class="section-tag">Menu</span>
-                <h2>Price list and favorites</h2>
-                <p>From crispy starters to indulgent desserts, every dish is designed to make your table buzz.</p>
+                <span class="section-tag" data-i18n="section_menu_tag">Menu</span>
+                <h2 data-i18n="section_menu_title">Price list and favorites</h2>
+                <p data-i18n="section_menu_text">From crispy starters to indulgent desserts, every dish is designed to make your table buzz.</p>
             </div>
             <div id="menu-items" class="menu-grid"></div>
             <div class="allergen-note">
-                <h3>Allergens</h3>
-                <p>All dishes may contain traces of gluten, dairy, nuts, soy, eggs, and sesame. Please inform your server about allergies before ordering.</p>
+                <h3 data-i18n="allergen_title">Allergens</h3>
+                <p data-i18n="allergen_text">All dishes may contain traces of gluten, dairy, nuts, soy, eggs, and sesame. Please inform your server about allergies before ordering.</p>
             </div>
         </section>
 
@@ -73,56 +93,65 @@
 
         <section id="gallery" class="section gallery-section">
             <div class="section-header">
-                <span class="section-tag">Gallery</span>
-                <h2>Sample plates and vibe shots</h2>
-                <p>Get hungry before you arrive with our curated food and interior images.</p>
+                <span class="section-tag" data-i18n="section_gallery_tag">Gallery</span>
+                <h2 data-i18n="section_gallery_title">Sample plates and vibe shots</h2>
+                <p data-i18n="section_gallery_text">Get hungry before you arrive with our curated food and interior images.</p>
             </div>
             <div class="gallery-grid">
-                <div class="gallery-card"><img src="assets/images/bolognese.jpg" alt="Bolognese"><p>Bolognese pasta</p></div>
-                <div class="gallery-card"><img src="assets/images/carbonara.jpg" alt="Carbonara"><p>Carbonara pasta</p></div>
-                <div class="gallery-card"><img src="assets/images/grill.jpg" alt="Grilled meat"><p>Grilled mixed meats</p></div>
-                <div class="gallery-card"><img src="assets/images/steak.jpg" alt="Steak"><p>Sirloin steak</p></div>
-                <div class="gallery-card"><img src="assets/images/margherita.jpg" alt="Margherita pizza"><p>Margherita pizza</p></div>
+                <div class="gallery-card"><img src="assets/images/food-1.svg" alt="Tagliatelle alla Bolognese"><p data-i18n="gallery_food_1">Tagliatelle alla Bolognese</p></div>
+                <div class="gallery-card"><img src="assets/images/food-2.svg" alt="Spaghetti alla Carbonara"><p data-i18n="gallery_food_2">Spaghetti alla Carbonara</p></div>
+                <div class="gallery-card"><img src="assets/images/food-3.svg" alt="Pollo al Limone"><p data-i18n="gallery_food_3">Pollo al Limone</p></div>
+                <div class="gallery-card"><img src="assets/images/food-4.svg" alt="Flank Steak al Pepe Verde"><p data-i18n="gallery_food_4">Flank Steak al Pepe Verde</p></div>
+                <div class="gallery-card"><img src="assets/images/food-5.svg" alt="Classic Tiramisu"><p data-i18n="gallery_food_5">Classic Tiramisu</p></div>
+                <div class="gallery-card"><img src="assets/images/food-6.svg" alt="Costine Italiane"><p data-i18n="gallery_food_6">Costine Italiane</p></div>
+                <div class="gallery-card"><img src="assets/images/food-7.svg" alt="Salmone Olandese"><p data-i18n="gallery_food_7">Salmone Olandese</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-1.svg" alt="Coca-Cola / Coca-Cola Zero"><p data-i18n="gallery_drink_1">Coca-Cola / Coca-Cola Zero</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-2.svg" alt="Kinley Tonic / Ginger Ale"><p data-i18n="gallery_drink_2">Kinley Tonic / Ginger Ale</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-3.svg" alt="Classic Mint Splash"><p data-i18n="gallery_drink_3">Classic Mint Splash</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-4.svg" alt="Mango Chili Madness"><p data-i18n="gallery_drink_4">Mango Chili Madness</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-5.svg" alt="Espresso"><p data-i18n="gallery_drink_5">Espresso</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-6.svg" alt="Dreher Gold 0,3 l"><p data-i18n="gallery_drink_6">Dreher Gold 0.3 l</p></div>
+                <div class="gallery-card"><img src="assets/images/drink-7.svg" alt="Terredirai Prosecco DOC Brut"><p data-i18n="gallery_drink_7">Terredirai Prosecco DOC Brut</p></div>
             </div>
         </section>
 
         <section id="about" class="section about-section">
             <div class="section-header">
-                <span class="section-tag">About Us</span>
-                <h2>Our story is loud, tasty, and a little chaotic.</h2>
+                <span class="section-tag" data-i18n="section_about_tag">About Us</span>
+                <h2 data-i18n="section_about_title">Our story is loud, tasty, and a little chaotic.</h2>
             </div>
             <div class="about-content">
                 <div>
-                    <p>Reastourant began as a late-night idea: turn bold comfort food into a vibrant dining playground. We serve vibrant plates, house-made sauces, and shareable cravings.</p>
+                    <p data-i18n="about_paragraph">Reastourant began as a late-night idea: turn bold comfort food into a vibrant dining playground. We serve vibrant plates, house-made sauces, and shareable cravings.</p>
                     <ul>
-                        <li>Big plates for friends</li>
-                        <li>Fresh ingredients every day</li>
-                        <li>Colorful presentation and atmosphere</li>
+                        <li data-i18n="about_feature_1">Big plates for friends</li>
+                        <li data-i18n="about_feature_2">Fresh ingredients every day</li>
+                        <li data-i18n="about_feature_3">Colorful presentation and atmosphere</li>
                     </ul>
                 </div>
                 <aside class="quote-card">
-                    <p>"The best place for relaxed nights with friends, loud music, and dishes that keep coming."</p>
-                    <span>- Local food fan</span>
+                    <p data-i18n="about_quote">"The best place for relaxed nights with friends, loud music, and dishes that keep coming."</p>
+                    <span data-i18n="about_quote_author">- Local food fan</span>
                 </aside>
             </div>
         </section>
 
         <section id="contact" class="section contact-section">
             <div class="section-header">
-                <span class="section-tag">Contact</span>
-                <h2>Reserve a table or send a quick message</h2>
+                <span class="section-tag" data-i18n="section_contact_tag">Contact</span>
+                <h2 data-i18n="section_contact_title">Reserve a table or send a quick message</h2>
             </div>
             <div class="contact-grid">
                 <div class="contact-card">
-                    <h3>Visit us</h3>
-                    <p>123 Flavor Street<br>Budapest, HU</p>
+                    <h3 data-i18n="contact_visit">Visit us</h3>
+                    <p data-i18n="contact_address">123 Flavor Street<br>Budapest, HU</p>
                 </div>
                 <div class="contact-card">
-                    <h3>Call</h3>
+                    <h3 data-i18n="contact_call">Call</h3>
                     <p>+36 1 234 5678</p>
                 </div>
                 <div class="contact-card">
-                    <h3>Email</h3>
+                    <h3 data-i18n="contact_email">Email</h3>
                     <p>hello@reastourant.hu</p>
                 </div>
             </div>
@@ -130,7 +159,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Reastourant. Made with spice and style.</p>
+        <p data-i18n="footer_text">&copy; 2026 Reastourant. Made with spice and style.</p>
     </footer>
 
     <script src="assets/etlap itallap/menu-data.js"></script>
