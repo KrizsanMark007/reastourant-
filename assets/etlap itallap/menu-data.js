@@ -32,7 +32,7 @@ const menuSections = [
         items: [
             { name: 'Coca-Cola / Coca-Cola Zero / Sprite / Fanta 0,25 l', description: '', price: '990 Ft', allergens: [''] },
             { name: 'Kinley Tonic / Ginger Ale 0,25 l', description: '', price: '990 Ft', allergens: [''] },
-            { name: 'NaturAqua still sparkling 0,5 l', description: '', price: '890 Ft', allergens: [''] },
+            { name: 'NaturAqua still / sparkling 0,5 l', description: '', price: '890 Ft', allergens: [''] },
             { name: 'Cappy 0,25 l', description: 'orange / apple / peach / multivitamin / strawberry', price: '990 Ft', allergens: [''] },
             { name: 'Fuze Tea Black Tea 0,25 l', description: 'lemon / peach hibiscus', price: '990 Ft', allergens: [''] }
         ]
@@ -66,7 +66,7 @@ const menuSections = [
             { name: 'Dreher Gold 0,5 l', description: '', price: '1 590 Ft', allergens: ['gluten'] },
             { name: 'Dreher Sourcherry 0,3 l', description: '', price: '990 Ft', allergens: ['gluten'] },
             { name: 'Dreher Sourcherry 0,5 l', description: '', price: '1 590 Ft', allergens: ['gluten'] },
-            { name: 'Dreher 24 Lemon 00% 0,33 l', description: '', price: '1 390 Ft', allergens: ['gluten'] },
+            { name: 'Dreher 24 Lemon 0% 0,33 l', description: '', price: '1 390 Ft', allergens: ['gluten'] },
             { name: 'Peroni 0,33 l', description: '', price: '1 490 Ft', allergens: ['gluten'] },
             { name: 'Corona Extra 0,33 l', description: '', price: '1 790 Ft', allergens: ['gluten'] }
         ]
